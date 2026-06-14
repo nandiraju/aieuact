@@ -29,6 +29,9 @@
     <meta name="geo.region" content="EU" />
     <meta name="geo.placename" content="Eastern Europe" />
 
+    <!-- Preload critical Hero Image for Page Speed (LCP) -->
+    <link rel="preload" fetchpriority="high" as="image" href="./assets/ai-act-car-hd.webp" type="image/webp" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -97,9 +100,12 @@
 
         <div class="w-full overflow-hidden rounded-[18px]">
           <img
-            src="./assets/ai-act-car-hd.png"
+            src="./assets/ai-act-car-hd.webp"
             alt="AI-enabled car with callouts for transparency, human oversight, safety controls, risk management, and accountability"
             class="block h-auto w-full"
+            width="1672"
+            height="941"
+            fetchpriority="high"
           />
         </div>
       </section>
@@ -107,9 +113,12 @@
       <section class="grid w-full grid-cols-1 items-center gap-8 border-t border-[#d9dce4] py-10 md:grid-cols-2 md:gap-10 md:py-7">
         <div class="w-full">
           <img
-            src="./assets/fast-car-hd.png"
+            src="./assets/fast-car-hd.webp"
             alt="Cutaway sports car showing deployed airbags and safety systems"
             class="block h-auto w-full"
+            width="1942"
+            height="809"
+            loading="lazy"
           />
 
           <div class="mx-auto mt-4 w-full max-w-[705px] rounded-[14px] bg-[#f7f7f8] px-7 py-4 text-body shadow-[0_8px_24px_rgba(13,31,66,0.04)] md:w-[78%]">
@@ -168,9 +177,12 @@
             <div class="mt-4 grid grid-cols-1 items-center gap-7 sm:grid-cols-2 sm:gap-7">
               <div class="overflow-hidden rounded-[14px]">
                 <img
-                  src="./assets/ai-chip-hd.png"
+                  src="./assets/ai-chip-hd.webp"
                   alt="AI processor chip on a glowing circuit board"
                   class="block h-auto w-full"
+                  width="1448"
+                  height="1086"
+                  loading="lazy"
                 />
               </div>
 
@@ -239,7 +251,7 @@
                 Low risk.<br />
                 Minimal obligations.
               </p>
-              <img src="./assets/risk-bike.png" alt="Green bicycle" class="mt-auto block w-full mix-blend-multiply" />
+              <img src="./assets/risk-bike.webp" alt="Green bicycle" class="mt-auto block w-full mix-blend-multiply" width="1448" height="1086" loading="lazy" />
             </article>
 
             <article class="flex min-h-[285px] flex-col overflow-hidden rounded-[16px] bg-[#fff7e9] px-5 pb-3 pt-4">
@@ -250,7 +262,7 @@
                 basic safeguards and<br />
                 transparency.
               </p>
-              <img src="./assets/risk-car.png" alt="Orange passenger car" class="mt-auto block w-full mix-blend-multiply" />
+              <img src="./assets/risk-car.webp" alt="Orange passenger car" class="mt-auto block w-full mix-blend-multiply" width="1448" height="1086" loading="lazy" />
             </article>
 
             <article class="flex min-h-[285px] flex-col overflow-hidden rounded-[16px] bg-[#fff0f0] px-5 pb-3 pt-4">
@@ -261,7 +273,7 @@
                 Powerful and valuable,<br />
                 but heavily regulated.
               </p>
-              <img src="./assets/risk-truck.png" alt="Red cargo truck" class="mt-auto block w-full mix-blend-multiply" />
+              <img src="./assets/risk-truck.webp" alt="Red cargo truck" class="mt-auto block w-full mix-blend-multiply" width="1448" height="1086" loading="lazy" />
             </article>
           </div>
         </div>
@@ -326,7 +338,7 @@
             </ul>
 
             <div>
-              <img src="./assets/ai-shield-hd.png" alt="Cybersecurity shield with checkmark" class="block w-full rounded-[14px]" />
+              <img src="./assets/ai-shield-hd.webp" alt="Cybersecurity shield with checkmark" class="block w-full rounded-[14px]" width="1448" height="1086" loading="lazy" />
               <div class="mt-3 rounded-[14px] bg-[#f7f8fa] px-5 py-3 text-body shadow-[0_8px_22px_rgba(13,31,66,0.035)]">
                 <p class="font-semibold">This is the AI equivalent of:</p>
                 <ul class="mt-2 list-disc space-y-0.5 pl-5 font-medium">
@@ -342,7 +354,7 @@
 
           <div class="mt-5 grid grid-cols-1 gap-7 sm:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] sm:gap-5">
             <div>
-              <img src="./assets/chatbot-panel-hd.png" alt="AI chatbot assistant interface" class="block w-full rounded-[14px] shadow-[0_8px_24px_rgba(13,31,66,0.08)]" />
+              <img src="./assets/chatbot-panel-hd.webp" alt="AI chatbot assistant interface" class="block w-full rounded-[14px] shadow-[0_8px_24px_rgba(13,31,66,0.08)]" width="1448" height="1086" loading="lazy" />
               <div class="mt-5 grid grid-cols-4 gap-4 text-[#3157ad]">
                 <svg class="media-format-icon" width="48" height="40" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="42" height="31" rx="3"/><circle cx="34" cy="13" r="3"/><path d="m7 32 10-11 8 7 6-5 10 9"/></svg>
                 <svg class="media-format-icon" width="48" height="40" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="40" height="32" rx="3"/><path d="m19 13 12 7-12 7V13Z"/></svg>
@@ -367,7 +379,7 @@
           <h2 class="text-heading font-semibold text-navy">The Real Point: Accountability</h2>
 
           <div class="mt-4 grid grid-cols-1 items-start gap-7 sm:grid-cols-[minmax(0,1.18fr)_minmax(210px,0.82fr)] sm:gap-7">
-              <img src="./assets/accountability-hd.png" alt="Judge's gavel resting on a book labeled Accountability" class="block w-full rounded-[14px] sm:max-h-[270px] sm:object-cover sm:object-center" />
+              <img src="./assets/accountability-hd.webp" alt="Judge's gavel resting on a book labeled Accountability" class="block w-full rounded-[14px] sm:max-h-[270px] sm:object-cover sm:object-center" width="1254" height="1254" loading="lazy" />
 
             <div class="text-body font-medium">
               <p class="text-subheading font-semibold leading-[1.45]">
@@ -389,7 +401,7 @@
           <h2 class="text-heading font-semibold text-navy">From GDPR to AI Governance</h2>
 
           <div class="mt-4">
-            <img src="./assets/gdpr-ai-comparison.png" alt="GDPR privacy governance transitioning to the EU AI Act" class="mx-auto block w-full max-w-[92%]" />
+            <img src="./assets/gdpr-ai-comparison.webp" alt="GDPR privacy governance transitioning to the EU AI Act" class="mx-auto block w-full max-w-[92%]" width="2172" height="724" loading="lazy" />
 
             <div class="mt-2 grid grid-cols-2 gap-8">
             <div>
@@ -434,7 +446,7 @@
             </div>
 
             <div class="absolute bottom-0 right-0 w-[60%] overflow-hidden rounded-tl-[18px]">
-              <img src="./assets/tunnel-car-hd.png" alt="Sports car in a modern illuminated tunnel" class="block w-full" />
+              <img src="./assets/tunnel-car-hd.webp" alt="Sports car in a modern illuminated tunnel" class="block w-full" width="1672" height="941" loading="lazy" />
               <div class="absolute inset-y-0 left-0 w-[20%] bg-gradient-to-r from-white via-white/85 to-transparent"></div>
             </div>
           </div>
@@ -462,7 +474,7 @@
                 </p>
               </div>
 
-              <img src="./assets/august-2026-hd.png" alt="Desk calendar displaying August 2026" class="mx-auto block w-full max-w-[155px]" />
+              <img src="./assets/august-2026-hd.webp" alt="Desk calendar displaying August 2026" class="mx-auto block w-full max-w-[155px]" width="1448" height="1086" loading="lazy" />
             </div>
           </div>
         </div>
@@ -480,7 +492,7 @@
             </p>
           </div>
 
-          <img src="./assets/governance-gauge-hd.png" alt="Governance readiness gauge" class="hidden w-full sm:block" />
+          <img src="./assets/governance-gauge-hd.webp" alt="Governance readiness gauge" class="hidden w-full sm:block" width="1448" height="1086" loading="lazy" />
         </div>
       </section>
     </main>
